@@ -13,7 +13,7 @@ var app;
                 this.imageUrl = imageUrl;
             }
             Product.prototype.calculateDiscount = function (percent) {
-                return this.price - (this.price * percent / 100);
+                return this.price - (this.price / 100 * percent);
             };
             return Product;
         }());
